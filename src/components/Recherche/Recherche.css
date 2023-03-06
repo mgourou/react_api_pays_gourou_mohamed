@@ -1,0 +1,33 @@
+.Api {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.Api_gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn_back {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.drapeau {
+    width: 500px;
+    border: 1px solid black;
+}
+
+.p_border {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}

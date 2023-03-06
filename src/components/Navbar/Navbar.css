@@ -1,0 +1,31 @@
+.Navbar ul {
+    display: flex; 
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.Navbar ul li{
+    list-style-type: none;    
+}
+
+.Navbar ul li:first-of-type {
+    padding-top: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.Navbar {
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.Navbar button {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

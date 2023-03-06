@@ -1,0 +1,55 @@
+.box_country_all {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box_country {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 280px;
+    height: 105%;
+    border-radius: 10px;
+}
+
+.box_country_flag img {
+    width: 100%;
+    height: 200px;
+}
+
+.box_country_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box_country_flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Recherche {
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.div_input_select {
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: center;
+    gap: 60%;
+}
+
+.div_input_select input , select {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
