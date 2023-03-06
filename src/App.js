@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, useRoutes  } from 'react-router-dom';
+import { useRoutes  } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Recherche from './components/Recherche/Recherche';
@@ -29,10 +29,10 @@ function App() {
       path: '/recherche/:code',
       element: <Recherche data={data}/>,
     },
-    // {
-    //   path: '*',
-    //   element: <h1>404 - Page not found</h1>,
-    // },
+    {
+      path: '*',
+      element: <h1>404 - Page not found</h1>,
+    },
   ]);
 
   return (

@@ -27,15 +27,6 @@
     const handleSelectChange = (event) => {
       setSelectedContinent(event.target.value);
     };
-
-    // const filteredData = selectedContinent === "All" ? data : data.filter(country => country.continent === selectedContinent);
-
-    // const LookData =
-    //   searchText === ""
-    //     ? data
-    //     : data.filter((country) =>
-    //       country.name.common.toLowerCase().includes(searchText.toLowerCase())
-    //     );
     const filteredData = data.filter((country) => {
       // Filtrer par nom de pays
       const nameMatch =
@@ -69,7 +60,7 @@
               <Link to={`/recherche/${country.cca3}`}>
                 <div className='box_country_flag' key={country.name.common}>
                   <img src={country.flags.svg} alt={country.name.common} />
-                  <span>{country.name.common}</span>
+                  <span className='test'>{country.name.common}</span>
                 </div>
               </Link>
               <div className='box_country_info'>

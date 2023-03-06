@@ -20,6 +20,7 @@
 .Navbar {
     padding: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: 0.3s;
 }
 
 .Navbar button {
@@ -28,4 +29,17 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+.dark-mode {
+    background-color: black !important;
+    color: white !important;
+    transition: 0.3s !important;
+}
+
+/* .white {
+    background-color: white !important;
+    transition: 0.3s !important;
+    color: black !important;
+} */
