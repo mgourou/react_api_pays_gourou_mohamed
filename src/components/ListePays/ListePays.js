@@ -3,7 +3,7 @@
   import { useEffect, useState } from 'react';
   import { Link } from 'react-router-dom';
 
-  function ListePays() {
+  function ListePays(props) {
     const [data, setData] = useState([]);
     const [selectedContinent, setSelectedContinent] = useState("All");
     const [searchText, setSearchText] = useState("");
@@ -41,7 +41,7 @@
     });
 
     return (
-      <div className="Recherche">
+      <div className={`Recherche ${props.darkMode ? 'dark-mode' : ''}`}>
         <div className='div_input_select'>
           <input type="text" placeholder='Rentre dans ton pays' value={searchText} onChange={(event) => setSearchText(event.target.value)} />
           <select name="" id="" value={selectedContinent} onChange={handleSelectChange}>

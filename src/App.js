@@ -8,6 +8,11 @@ import axios from 'axios';
 function App() {
 
   const [data, setData] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   useEffect(() => {
     axios
@@ -23,11 +28,11 @@ function App() {
   const routes = useRoutes([
     {
       path: '/',
-      element: <ListePays />,
+      element: <ListePays data={data} isDarkMode={isDarkMode}/>,
     },
     {
       path: '/recherche/:code',
-      element: <Recherche data={data}/>,
+      element: <Recherche data={data} isDarkMode={isDarkMode}/>,
     },
     {
       path: '*',
@@ -37,7 +42,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar toggleDarkMode={toggleDarkMode}/>
       {routes}
     </div>
   );

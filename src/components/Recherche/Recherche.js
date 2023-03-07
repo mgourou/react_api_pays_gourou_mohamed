@@ -1,7 +1,8 @@
 import './Recherche.css';
 import { useParams, Link } from 'react-router-dom';
 
-function Recherche({ data }) {
+function Recherche({ data }, props) {
+
     const { code } = useParams();
     const selectedCountry = data.find(country => country.cca3 === code);
     if (!selectedCountry) {
@@ -9,7 +10,7 @@ function Recherche({ data }) {
     }
 
     return (
-      <div className="Api">
+      <div className={`Api ${props.darkMode ? 'dark-mode' : ''}`}>
         <div className='Api_gauche'>
         <Link to="/"><button className='btn_back'>Retour</button> </Link>
         <img src={selectedCountry.flags.svg} alt={`Drapeau de ${selectedCountry.name.common}`} className='drapeau' />
