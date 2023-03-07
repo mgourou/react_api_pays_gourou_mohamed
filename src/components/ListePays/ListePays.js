@@ -60,7 +60,7 @@
               <Link to={`/recherche/${country.cca3}`}>
                 <div className='box_country_flag' key={country.name.common}>
                   <img src={country.flags.svg} alt={country.name.common} />
-                  <span className='test'>{country.name.common}</span>
+                  <span className={`test ${props.isDarkMode ? 'dark-mode' : ''}`}>{country.name.common}</span>
                 </div>
               </Link>
               <div className='box_country_info'>

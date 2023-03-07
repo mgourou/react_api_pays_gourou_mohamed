@@ -3,11 +3,11 @@ import './Navbar.css';
 function Navbar(props) {
 
   return (
-    <div className={`Navbar ${props.darkMode ? 'dark-mode' : ''}`}>
+    <div className={`Navbar ${props.isDarkMode ? 'dark-mode' : ''}`}>
         <nav >
             <ul>
                 <li>Where In The World ?</li>
-                <li><button className='btn_dark_mode' onClick={props.toggleDarkMode}>{props.darkMode ? 'Mode clair' : 'Mode sombre'}</button></li>
+                <li><button className={` ${props.isDarkMode ? 'white-mode' : 'dark-mode'}`} onClick={props.toggleDarkMode}>{props.isDarkMode ? 'Mode clair' : 'Mode sombre'}</button></li>
             </ul>
         </nav>
     </div>

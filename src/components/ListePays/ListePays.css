@@ -61,3 +61,7 @@ a{
     color: white !important;
     transition: 0.3s !important;
 }
+
+.test {
+    transition: 0s;
+}

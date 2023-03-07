@@ -14,6 +14,8 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
 
+  const appClasses = isDarkMode ? "App dark-mode" : "App";
+
   useEffect(() => {
     axios
       .get('https://restcountries.com/v3.1/all')
@@ -41,8 +43,8 @@ function App() {
   ]);
 
   return (
-    <div>
-      <Navbar toggleDarkMode={toggleDarkMode}/>
+    <div className={appClasses}>
+      <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
       {routes}
     </div>
   );
